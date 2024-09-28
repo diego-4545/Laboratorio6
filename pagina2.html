@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="ccs.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pagina1.html">Página 1</a></li>
+                <li><a href="pagina2.html" class="active">Página 2</a></li>
+                <li><a href="pagina3.html">Página 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container mt-5">
+        <h1>Razas más comunes de gatos</h1>
+        <p>- Persa.</p>
+        <p>- Siamés.</p>
+        <p>- Siberiano.</p>
+        <p>(Las imágenes están en ese orden)</p>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="IMAGENES/Imagen 11.jfif" class="img-fluid" alt="Imagen 1">
+            </div>
+            <div class="col-md-4">
+                <img src="IMAGENES/Imagen 12.jpg" class="img-fluid" alt="Imagen 2">
+            </div>
+            <div class="col-md-4">
+                <img src="IMAGENES/Imagen 13.webp" class="img-fluid" alt="Imagen 3">
+            </div>
+        </div>
+
+        <div class="accordion mt-5" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Información de gatos persa
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Tiene las orejas pequeñas y separadas, lo que aún acentúa más el tamaño y la redondez de la
+                        cabeza. El cuerpo es compacto, con patas cortas y robustas, grandes pies redondos y una cola
+                        corta y poblada. El pelaje es largo, extremadamente grueso y exuberante, con un manto inferior
+                        denso y suave.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Información de gatos siamés
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        El siamés tiene una complexión alargada y atlética, que sustentan unas patas esbeltas con pies
+                        pulcros y ovalados. Sus orejas son grandes y puntiagudas, lo que le confiere una expresión
+                        inteligente, que sigue las líneas de su cabeza triangular. Los ojos tienen forma almendrada y se
+                        inclinan hacia la nariz, y su cola es larga, estrecha y recta. El manto del siamés es corto y
+                        fino, ceñido al cuerpo, y se presenta en colores pálidos, con sombras más oscuras en las partes
+                        distales, es decir, la cara, las orejas, las patas y la cola.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
+                        Información de gatos siberianos
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Tiene un pelaje largo, denso e hidrófugo, perfectamente adaptado al clima frío. A este felino le
+                        encanta trepar árboles y salpicar agua, es una criatura juguetona. Es una raza antigua y oriunda
+                        de Rusia, pero no fue reconocida internacionalmente hasta los años noventa.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-primary mt-5" data-bs-toggle="modal" data-bs-target="#infoModal">
+            Lista mas larga de los gatos mas comunes
+        </button>
+
+    </section>
+
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Lista mas larga de los gatos mas comunes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">1. Gato Persa</li>
+                        <li class="list-group-item">2. Gato Siamés</li>
+                        <li class="list-group-item">3. Gato Sibariano</li>
+                        <li class="list-group-item">4. Gato Bengalí</li>
+                        <li class="list-group-item">5. Gato Esfinge (Sphynx)</li>
+                        <li class="list-group-item">6. Gato Ragdoll</li>
+                        <li class="list-group-item">7. Gato Birmano</li>
+                        <li class="list-group-item">8. Gato Maine Coon</li>
+                        <li class="list-group-item">9. Gato Azul Ruso</li>
+                        <li class="list-group-item">10. Gato Scottish Fold</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
